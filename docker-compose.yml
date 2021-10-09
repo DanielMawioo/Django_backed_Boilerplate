@@ -35,7 +35,7 @@ services:
     restart: always
     build:
       context: .
-    command: celery -A core worker -l DEBUG
+    command: celery -A backendapi worker -l DEBUG
     volumes:
       - .:/django
     container_name: celery
