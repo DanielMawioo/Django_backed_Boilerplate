@@ -17,7 +17,7 @@
 - 7. Remember to register all your apps in settings.py
 
 
-# Youre  all set to go
+# Youre  all set to go 🚀 
 
 ## Work on progress
 - 1. CI/CD config
