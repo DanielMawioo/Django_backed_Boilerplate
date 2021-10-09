@@ -1,0 +1,20 @@
+# Commands to use
+docker-compose build
+docker-compose run --rm app django-admin startproject {Your project name here} .
+docker-compose up
+docker exec -it django_container /bin/bash
+
+docker-compose run django_app sh -c "django-admin startapp newapp ."
+docker exec -it django_app sh
+
+#Run Celery Task
+    python manage.py shell
+    from newapp.tasks import add
+    add.delay(2, 2)
+
+Info:
+PYTHONUNBUFFERED:
+Setting the non-empty value of PYTHONUNBUFFERED means 
+that the python output is transmitted directly to the 
+terminal without being buffered and that allows displaying 
+the application’s output in real-time. 
